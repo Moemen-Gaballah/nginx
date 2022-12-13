@@ -1,0 +1,11 @@
+docker run --name nginx -p 80:80 --hostname ng1 -d nginx
+
+docker inspect nginx
+
+docker stop nginx
+
+docker rm nginx
+
+docker run --name nginx --hostname ng1 -p 80:80 -v /c/Users/moemen.gaballah/Desktop/course-matrials/nginx/practice/html:/usr/share/nginx/html -d nginx // solve it
+
+docker run --name nginx --hostname ng1 -p 80:80 -v C:/Users/moemen.gaballah/Desktop/course-matrials/nginx/practice/html:/usr/share/nginx/html -d nginx
